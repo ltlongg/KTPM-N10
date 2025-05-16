@@ -1,7 +1,6 @@
 const Homepage = () => {
   return (
     <div className=''>Homepage</div>
-    // ktpm-n10
   )
 }
 
