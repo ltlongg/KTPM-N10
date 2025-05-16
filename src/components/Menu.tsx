@@ -112,3 +112,8 @@ const menuItems = [
     ],
   },
 ];
+const Menu = () => {
+  return (
+    <div className="">Menu</div>
+  )
+}
