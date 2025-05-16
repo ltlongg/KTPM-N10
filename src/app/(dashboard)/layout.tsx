@@ -15,7 +15,7 @@ export default function DashboardLayout({
           <Image src="/logo.png" alt="logo" width={32} height={32}/>
           <span className="hidden lg:block">SchooLama</span> 
         </Link>
-        <Menu/>
+        {/* <Menu/> */}
       </div>
       {/* RIGHT */}
       <div className="w-[84%] md:w-[92%] l:w-[84%] xl:w-[86%] bg-blue-50">
