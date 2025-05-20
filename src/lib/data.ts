@@ -421,7 +421,7 @@ export const classesData = [
     supervisor: "Iva Frank",
   },
   {
-    id: 5,
+    id: 6,
     name: "5B",
     capacity: 20,
     grade: 5,
@@ -929,7 +929,7 @@ export const calendarEvents = [
     title: "English",
     allDay: false,
     start: new Date(2025, 4, 20, 9, 0),
-    end: new Date(2024, 4, 20, 9, 45),
+    end: new Date(2025, 4, 20, 9, 45),
   },
   {
     title: "Biology",
