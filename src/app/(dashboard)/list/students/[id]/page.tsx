@@ -1,5 +1,5 @@
 import Announcements from "@/components/Announcements";
-import BigCalendar from "@/components/BigCalendar";
+import BigCalendar from "@/components/BigCalender";
 import Performance from "@/components/Performance";
 import { role } from "@/lib/data";
 import Image from "next/image";
