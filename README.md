@@ -15,4 +15,9 @@ To learn more about Next.js, take a look at the following resources:
 ##Install on backend:
 Install Docker
 Create new sever(postgres) with this:
+
+
+
+
+
 ![image](https://github.com/user-attachments/assets/2e471b38-7249-4a97-b6a0-fc4f654b85d7)
