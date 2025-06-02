@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7c4086ea-f08d-445f-9ddc-c31ff3ca6da3)# Lama Dev School Management Dashboard
+# Lama Dev School Management Dashboard
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -17,7 +17,5 @@ Install Docker
 Create new sever(postgres) with this:
 
 
+![image](https://github.com/user-attachments/assets/a60cdeac-b094-4807-a40b-e47ef531e835)
 
-
-
-![image](https://github.com/user-attachments/assets/2e471b38-7249-4a97-b6a0-fc4f654b85d7)
