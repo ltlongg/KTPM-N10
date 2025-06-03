@@ -1,7 +1,7 @@
 # Dev School Management Dashboard
 ## KTPM - Nhóm 10
 ## Team:
-- Lê Thành Long - 22010124 (Nhóm trưởng)
+- Lê Thành Long - 22010124 (C)
 - Hồ Xuân Hùng - 22010493
 - Dương Thanh Bình -22010044
 ## UML
