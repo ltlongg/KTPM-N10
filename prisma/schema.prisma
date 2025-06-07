@@ -8,7 +8,7 @@ datasource db {
 }
 
 model Admin {
-  id       String @id
+  id       String @id 
   username String @unique
 }
 
@@ -190,4 +190,5 @@ enum Day {
   WEDNESDAY
   THURSDAY
   FRIDAY
+  SATURDAY
 }
