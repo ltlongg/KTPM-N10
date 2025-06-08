@@ -5,8 +5,8 @@ import TableSearch from "@/components/TableSearch";
 import { role, teachersData } from "@/lib/data";
 import prisma from "@/lib/prisma";
 import { ITEM_PER_PAGE } from "@/lib/settings";
+import { auth } from "@clerk/nextjs/server";
 import { Class, Prisma, Subject, Teacher } from "@prisma/client";
-import { Teachers } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,7 +15,15 @@ type TeacherList = Teacher & {
   subjects: Subject[] } & {
   classes: Class[]}; // Assuming classes is an array of strings
 
-const columns = [
+const TeacherListPage = async ({
+  searchParams,
+}:{
+  searchParams:{[key: string]: string| undefined}; 
+}) => {
+   
+  const {sessionClaims} = await auth();
+  const role = (sessionClaims?.metadata as { role?: string })?.role;
+  const columns = [
   {
     header: "Info",
     accessor: "info",
@@ -45,10 +53,14 @@ const columns = [
     accessor: "address",
     className: "hidden lg:table-cell",
   },
-  {
-    header: "Actions",
-    accessor: "action",
-  },
+  ...(role === "admin"
+      ? [
+          {
+            header: "Actions",
+            accessor: "action",
+          },
+        ]
+  : []),
 ];
 const renderRow = (item: TeacherList) => (
     <tr
@@ -90,12 +102,6 @@ const renderRow = (item: TeacherList) => (
       </td>
     </tr>
   );
-const TeacherListPage = async ({
-  searchParams,
-}:{
-  searchParams:{[key: string]: string| undefined}; 
-}) => {
-
   const {page, ...queryParams} = searchParams;
 
   const p = page ? parseInt(page) : 1;
@@ -139,7 +145,6 @@ const [data,count] = await prisma.$transaction([
     }),
   prisma.teacher.count({where : query}),
   ])
-  
   
   return(
   <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0">
