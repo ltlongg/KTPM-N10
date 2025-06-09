@@ -108,3 +108,32 @@ Hệ thống được thiết kế với các vai trò người dùng riêng bi�
 Sau khi hoàn tất các bước cài đặt, khởi động server development:
 ```bash
 npm run dev
+
+## 📁 Cấu trúc thư mục
+
+```bash
+/
+|-- app/                      # App Router chính của Next.js
+|   |-- (auth)/               # Các trang xác thực như đăng nhập, đăng ký
+|   |-- (dashboard)/          # Giao diện chính sau khi đăng nhập
+|   |   |-- list/             # Hiển thị danh sách các thực thể
+|   |   |   |-- students/     # Quản lý học sinh
+|   |   |   |   |-- [id]/     # Trang chi tiết học sinh theo ID
+|   |   |   |   |-- page.tsx  # Trang danh sách học sinh
+|   |   |-- page.tsx          # Trang tổng quan dashboard
+|   |   `-- layout.tsx        # Layout của khu vực dashboard
+|
+|-- components/               # Các component tái sử dụng (Button, Table, Modal, ...)
+|
+|-- lib/                      # Các thư viện và tiện ích dùng chung
+|   |-- prisma.ts             # Khởi tạo Prisma Client
+|   |-- settings.ts           # Cài đặt cấu hình ứng dụng (hằng số, enum, v.v.)
+|
+|-- prisma/                   # Cấu hình database với Prisma
+|   |-- schema.prisma         # Định nghĩa cấu trúc CSDL
+|   `-- seed.ts               # Script để tạo dữ liệu mẫu
+|
+|-- public/                   # Hình ảnh, favicon, tài sản tĩnh
+|
+`-- ...                       # Các file cấu hình khác như .env, tsconfig.json, v.v.
+
