@@ -4,6 +4,7 @@ Một ứng dụng web được xây dựng bằng Next.js, Prisma, và Clerk đ
 
 Tham khảo và hướng dẫn từ nguồn: [hehe](https://www.youtube.com/watch?v=6sfiAyKy8Jo&t=7715s)
 
+
 ## Bảng mục lục
 
 - [Tính năng chính](#tính-năng-chính)
@@ -12,6 +13,7 @@ Tham khảo và hướng dẫn từ nguồn: [hehe](https://www.youtube.com/watc
 - [Cài đặt](#cài-đặt)
 - [Bắt đầu](#bắt-đầu)
 - [Cấu trúc dự án](#cấu-trúc-dự-án)
+- Video chạy sản phẩm([video](https://www.youtube.com/watch?v=OXX0zM8Xn0w)).
 
 ## Tính năng chính
 
@@ -139,7 +141,4 @@ npm run dev
 |
 `-- ...                       # Các file cấu hình khác như .env, tsconfig.json, v.v.
 
- 📺 [Video Demo]{https://www.youtube.com/watch?v=OXX0zM8Xn0w}
-
-[👉 Xem demo trên YouTube](https://youtu.be/OXX0zM8Xn0w)
 
