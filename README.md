@@ -139,7 +139,7 @@ npm run dev
 |
 `-- ...                       # Các file cấu hình khác như .env, tsconfig.json, v.v.
 
-## 📺 Video Demo
+ 📺 [Video Demo]{https://www.youtube.com/watch?v=OXX0zM8Xn0w}
 
 [👉 Xem demo trên YouTube](https://youtu.be/OXX0zM8Xn0w)
 
