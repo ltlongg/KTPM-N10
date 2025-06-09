@@ -2,6 +2,8 @@
 
 Một ứng dụng web được xây dựng bằng Next.js, Prisma, và Clerk để quản lý các hoạt động trong trường học. Hệ thống cung cấp các chức năng khác nhau cho các vai trò người dùng khác nhau như Quản trị viên, Giáo viên, Học sinh và Phụ huynh.
 
+Tham khảo và hướng dẫn từ nguồn: [hehe](https://www.youtube.com/watch?v=6sfiAyKy8Jo&t=7715s)
+
 ## Bảng mục lục
 
 - [Tính năng chính](#tính-năng-chính)
