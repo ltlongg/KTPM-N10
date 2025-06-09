@@ -1,17 +1,19 @@
-# Dev School Management Dashboard
-## KTPM - Nhóm 10
-## Team:
-- Lê Thành Long - 22010124 (Nhóm trưởng)
-- Hồ Xuân Hùng - 22010493
-- Dương Thanh Bình -22010044
-## UseCase tổng quan
-![2](https://github.com/user-attachments/assets/5278b928-5171-4567-a4a2-6a6a73baaca6)
-![1](https://github.com/user-attachments/assets/1e6ee1f6-dfd9-43b9-ae17-dee8fe346278)
-
-##Install on backend:
-Install Docker
-Create new sever(postgres) with this:
-
-
-![image](https://github.com/user-attachments/assets/a60cdeac-b094-4807-a40b-e47ef531e835)
-
+/
+|-- app/                      # Next.js App Router
+|   |-- (auth)/               # Các trang xác thực (đăng nhập, đăng ký)
+|   |-- (dashboard)/          # Layout chính của ứng dụng sau khi đăng nhập
+|   |   |-- list/             # Các trang hiển thị danh sách (học sinh, giáo viên, v.v.)
+|   |   |   |-- students/
+|   |   |   |   |-- [id]/     # Trang chi tiết một học sinh
+|   |   |   |   |-- page.tsx  # Trang danh sách học sinh
+|   |   |-- page.tsx          # Trang dashboard chính
+|   |   `-- layout.tsx
+|-- components/               # Các component React có thể tái sử dụng
+|-- lib/                      # Các hàm tiện ích, cấu hình
+|   |-- prisma.ts             # Khởi tạo Prisma client
+|   |-- settings.ts           # Các cài đặt chung của ứng dụng
+|-- prisma/                   # Cấu hình Prisma
+|   |-- schema.prisma         # Định nghĩa schema cơ sở dữ liệu
+|   `-- seed.ts               # Script để tạo dữ liệu mẫu
+|-- public/                   # Các tài sản tĩnh (hình ảnh, icon)
+`-- ...                       # Các file cấu hình khác
