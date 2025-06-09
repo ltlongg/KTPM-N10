@@ -13,7 +13,7 @@ Tham khảo và hướng dẫn từ nguồn: [hehe](https://www.youtube.com/watc
 - [Cài đặt](#cài-đặt)
 - [Bắt đầu](#bắt-đầu)
 - [Cấu trúc dự án](#cấu-trúc-dự-án)
-- Video chạy sản phẩm([video](https://www.youtube.com/watch?v=OXX0zM8Xn0w)).
+- [Video chạy sản phẩm](https://www.youtube.com/watch?v=OXX0zM8Xn0w)).
 
 ## Tính năng chính
 
